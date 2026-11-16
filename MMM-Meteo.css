@@ -1,0 +1,112 @@
+/* Même langage que MMM-NowPlayingOnSpotify et MMM-HAAgenda : étiquettes, chiffres fins, couleur du temps.
+   Tailles en em : 1em = la taille de police de base du miroir. */
+
+.MET {
+  display: grid;
+  gap: 1.6em;
+  text-align: right;
+  width: 19em;
+}
+
+.MET_label {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.7em;
+  gap: 1em;
+  letter-spacing: 0.18em;
+  opacity: 0.65;
+  text-transform: uppercase;
+}
+
+.MET_label::after {
+  background: linear-gradient(270deg, rgb(255 255 255 / 0.4), transparent);
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+
+.MET_now {
+  align-items: center;
+  display: flex;
+  gap: 0.9em;
+  justify-content: flex-end;
+  margin-top: 0.4em;
+}
+
+.MET_icon {
+  color: color-mix(in srgb, var(--MET-color) 55%, #ffffff);
+  font-size: 2.6em;
+}
+
+.MET_temp {
+  color: #ffffff;
+  font-size: 4.8em;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.MET_cond {
+  color: #ffffff;
+  font-size: 0.9em;
+  margin-top: 0.4em;
+  opacity: 0.75;
+}
+
+.MET_days {
+  display: grid;
+  gap: 0.1em;
+}
+
+.MET_days .MET_label {
+  margin-bottom: 0.3em;
+}
+
+.MET_day {
+  align-items: center;
+  display: grid;
+  gap: 0.7em;
+  grid-template-columns: 2.5em 1.5em 2em 1fr 2em;
+  line-height: 1.8;
+}
+
+.MET_dayName {
+  color: #ffffff;
+  font-size: 0.7em;
+  letter-spacing: 0.14em;
+  opacity: 0.7;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.MET_dayIcon {
+  color: color-mix(in srgb, var(--MET-color) 50%, #ffffff);
+  font-size: 1.05em;
+  text-align: center;
+}
+
+.MET_min {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.MET_max {
+  color: #ffffff;
+  text-align: left;
+}
+
+.MET_track {
+  background: rgb(255 255 255 / 0.12);
+  border-radius: 0.2em;
+  height: 0.3em;
+  position: relative;
+}
+
+.MET_track i {
+  background: linear-gradient(90deg, #5ac8fa, #a3e05a, #ffd60a, #ff9f0a);
+  border-radius: 0.2em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}

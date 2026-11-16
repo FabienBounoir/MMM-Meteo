@@ -1,0 +1,25 @@
+{
+	"name": "mmm-meteo",
+	"version": "1.0.0",
+	"description": "MagicMirror² module: current weather and the next days as temperature range bars, from Open-Meteo (free, no API key)",
+	"main": "MMM-Meteo.js",
+	"scripts": {
+		"test": "node test.js"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"keywords": [
+		"MagicMirror",
+		"weather",
+		"météo",
+		"open-meteo",
+		"forecast"
+	],
+	"author": "Fabien Bounoir",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FabienBounoir/MMM-Meteo.git"
+	}
+}
